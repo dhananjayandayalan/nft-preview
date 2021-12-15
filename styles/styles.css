@@ -1,0 +1,116 @@
+.container {
+  width: 350px;
+  height: 570px;
+  padding: 25px;
+  margin: 100px auto;
+  -webkit-box-shadow: 2px 2px 10px black;
+          box-shadow: 2px 2px 10px black;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.container .first-img {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.container .first-img img {
+  border-radius: 1rem;
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
+}
+
+.container .first-img .middle {
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 1rem;
+}
+
+.container .first-img .middle svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.container .first-img:hover img {
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
+}
+
+.container .first-img:hover .middle {
+  opacity: 0.9;
+  background-color: #00fff7;
+  width: inherit;
+  height: inherit;
+}
+
+.container .title {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.container .description {
+  color: #2f415b;
+  margin-bottom: 15px;
+}
+
+.container .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-bottom: 1px solid #2f415b;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.container .price p span {
+  margin-right: 7px;
+}
+
+.container .price .price-val {
+  color: #00fff7;
+}
+
+.container .price .time {
+  color: white;
+}
+
+.container .avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.container .avatar img {
+  width: 25px;
+  height: auto;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+
+.container .avatar .avatar-text {
+  color: white;
+}
+
+.hover-text:hover {
+  cursor: pointer;
+  color: #00fff7;
+}
+/*# sourceMappingURL=styles.css.map */
